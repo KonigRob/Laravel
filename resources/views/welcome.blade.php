@@ -79,15 +79,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Discover your
+                    Discover your Activity
                 </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="contact">contact us</a>
-                    <a href="about">about</a>
+                    <a href="/profile">Activity Profile</a>
+                    <a href="/contact">contact us</a>
+                    <a href="/about">about</a>
                 </div>
             </div>
         </div>
