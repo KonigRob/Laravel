@@ -25,3 +25,5 @@ Route::get('about', 'PagesController@about');
 
 Route::resource('profile', 'ActivityProfileController');
 Route::get('posting/{id}', 'PostingController@show');
+
+Route::resource('post', 'InterestPostController');
