@@ -20,3 +20,4 @@ Route::get('/whatever', function (){
 });
 
 Route::get('contact', 'PagesController@contact');
+Route::get('about', 'PagesController@about');
