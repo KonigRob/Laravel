@@ -29,3 +29,9 @@ Route::get('posting/{id}', 'PostingController@show');
 Route::resource('post', 'InterestPostController');
 
 Route::get('users', 'UsersController@index');
+
+Route::get('/places2', function (){
+	return view('pages/places2');
+});
+
+Route::get('users/{id}', 'UsersController@show')->name('showuser');

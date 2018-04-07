@@ -2,6 +2,7 @@
 
 use database\seeds\UsersTableSeeder;
 use database\seeds\CountriesTableSeeder;
+//use database\seeds\CountriesSeeder;
 
 use Illuminate\Database\Seeder;
 
@@ -16,5 +17,6 @@ class DatabaseSeeder extends Seeder
     {
          $this->call(UsersTableSeeder::class);
 //         $this->call(CountriesTableSeeder::class);
+//	    $this->call(CountriesSeeder::class);
     }
 }

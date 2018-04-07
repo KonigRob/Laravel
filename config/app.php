@@ -40,7 +40,7 @@ return [
     */
 
     'debug' => env('APP_DEBUG', false),
-
+//		'debug => false',
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -150,6 +150,8 @@ return [
         /*
          * Package Service Providers...
          */
+	    Igaster\LaravelCities\GeoServiceProvider::class,
+	    Barryvdh\Debugbar\ServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -158,8 +160,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-	    Webpatser\Countries\CountriesServiceProvider::class
+        App\Providers\RouteServiceProvider::class
 
     ],
 
@@ -185,9 +186,9 @@ return [
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
-	    'Countries' => Webpatser\Countries\CountriesFacade::class,
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
         'DB' => Illuminate\Support\Facades\DB::class,
+	    'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
         'Event' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,
