@@ -34,4 +34,11 @@ Route::get('/places2', function (){
 	return view('pages/places2');
 });
 
+
+
+Route::get('users/create', 'UsersController@create')->name('createuser');
 Route::get('users/{id}', 'UsersController@show')->name('showuser');
+
+//Route::get('/geo', 'UsersController@geo')->name('geo');
+
+Route::post('users', 'UsersController@store')->name('storeuser');
