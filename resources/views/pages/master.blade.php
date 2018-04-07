@@ -65,6 +65,28 @@
     </style>
 </head>
 <body class="container">
+<div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="{{Request::is('post/*')?'active':''}}"><a href="/post/1">Our Activites</a></li>
+        <li><a href="/profile">Our Profile</a></li>
+    </ul>
+    {{--<li class="dropdown">--}}
+        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"--}}
+           {{--aria-expanded="false">Dropdown <span class="caret"></span></a>--}}
+        {{--<ul class="dropdown-menu">--}}
+            {{--<li><a href="#">Action</a></li>--}}
+            {{--<li><a href="#">Action</a></li>--}}
+            {{--<li><a href="#">Action</a></li>--}}
+            {{--<li role="separator" class="divider"></li>--}}
+            {{--<li class="dropdown-header">Nav header</li>--}}
+            {{--<li><a href="#">Action</a></li>--}}
+            {{--<li><a href="#">Action</a></li>--}}
+        {{--</ul>--}}
+    {{--</li>--}}
+</div>
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
@@ -78,6 +100,7 @@
     @endif
 
     <div class="content">
+
         <div class="title m-b-md">
             @yield('header')
         </div>
@@ -86,14 +109,16 @@
         <div style="color:black;font-weight:800; margin:5%;">
             @yield('data')
         </div>
-        <div class="links">
-            <a href="/">Home</a>
+
+
+<!--            <a href="/">Home</a>
             <a href="/post/1">Our Activities Postings</a>
             <a href="/profile">Activity Profile</a>
             <a href="/contact">contact us</a>
             <a href="/about">about</a>
+-->
 
-        </div>
+
     </div>
 </div>
 @yield('footer')
