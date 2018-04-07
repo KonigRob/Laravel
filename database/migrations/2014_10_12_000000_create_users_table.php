@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('website');
 	        $table->string('streetaddress');
 	        $table->string('city');
-	        $table->string('provinceid');
+	        $table->string('state');
 	        $table->string('countryid');
 	        $table->string('postalzipcode');
 	        $table->string('mobilephone');

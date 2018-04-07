@@ -22,7 +22,7 @@ $factory->define(App\User::class, function (Faker $faker) {
 		'website' => $faker->url,
 		'streetaddress' => $faker->streetAddress,
 		'city' => $faker->numberBetween(1, 250000),
-		'provinceid' => $faker->numberBetween(1, 5000),
+		'state' => $faker->numberBetween(1, 5000),
 		'countryid' => $faker->numberBetween(1, 200),
 		'postalzipcode' => $faker->postcode,
 		'mobilephone' => $faker->phoneNumber,

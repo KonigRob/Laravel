@@ -16,7 +16,7 @@ class CountriesTableSeeder extends \DatabaseSeeder
 {
 	public function run()
 	{
-		DB::table('countries')->delete();
+		DB::table('new_countries')->delete();
 
 		$countries = array(
 			array('id' => 1, 'code' => 'US', 'name' => 'United States'),
@@ -263,6 +263,6 @@ class CountriesTableSeeder extends \DatabaseSeeder
 			array('id' => 246, 'code' => 'ZW', 'name' => 'Zimbabwe'),
 		);
 
-		DB::table('countries')->insert($countries);
+		DB::table('new_countries')->insert($countries);
 	}
 }
