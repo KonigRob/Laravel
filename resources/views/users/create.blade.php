@@ -81,10 +81,10 @@
 
 
 {{--I have no clue why it's pushes this input to the top of the page, and don't have the time to fix it--}}
-        {!! Form::label('autocomplete', 'Location:') !!}
-        {!! Form::text('autocomplete', null, ['class' => 'form-control'], ['onFocus' => 'geolocate()'], ['placeholder' => 'Enter your address']) !!}
-                {{--<input class="form-control" id="autocomplete" placeholder="Enter your address"--}}
-                       {{--onFocus="geolocate()" type="text">--}}
+        {{--{!! Form::label('autocomplete', 'Location:') !!}--}}
+        {{--{!! Form::text('autocomplete', null, ['class' => 'form-control'], ['onFocus' => 'geolocate()'], ['placeholder' => 'Enter your address']) !!}--}}
+            <input class="form-control" id="autocomplete" placeholder="Enter your address"
+                   onFocus="geolocate()" type="text">
 
 
             <table id="address">
